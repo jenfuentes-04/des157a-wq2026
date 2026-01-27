@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experiment 2</title>
+</head>
+<body>
+    <h1>JS Experiment 2</h1>
+
+    <script>
+        // my program asks users for their favorite color from a list and changes the page background to that color
+
+        var colors = ["red", "blue", "green", "purple", "orange", "pink"];
+
+        // function to check if color is valid and return true/false
+        function isValidColor(userColor) {
+            for(var i = 0; i < colors.length; i++) {
+                if(colors[i] === userColor.toLowerCase()) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        // function to change background and display message
+        function changeBackground(color) {
+            document.body.style.backgroundColor = color;
+            var message = document.createElement("h2");
+            message.textContent = "Woohoo, how fun! Background changed to " + color + "!";
+            document.body.appendChild(message);
+        }
+
+        // get user input
+        var userChoice = prompt("Choose your favorite color: red, blue, green, purple, orange, or pink");
+
+        // check if valid & change background
+        if(isValidColor(userChoice)) {
+            changeBackground(userChoice.toLowerCase());
+        } else {
+            var error = document.createElement("h2");
+            error.textContent = "Aw sorry, that color is not in the list!";
+            document.body.appendChild(error);
+        }
+
+    </script>
+
+</body>
+</html>
