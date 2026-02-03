@@ -1,0 +1,221 @@
+/******** Color Scheme *******/
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --lemonChiffon: #FFFAC5;
+    --cottonRose: #FFD4D6;
+    --frostedBlue: #ABEFFF;
+    --pacificCyan: #397D8D;
+}
+
+/******** General Styles *******/
+body {
+    font-family: "Comfortaa", sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+/******** Typography *******/
+header h1 {
+    font-size: 70px;
+    color: var(--pacificCyan);
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 30px;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+}
+
+header h2 {
+    font-size: 40px;
+    color: var(--pacificCyan);
+    text-align: right;
+    padding-right: 300px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+footer {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/******** Header *******/
+header {
+    background: var(--frostedBlue);
+    padding-top: 50px;
+    padding-bottom: 0;
+    position: relative;
+    border-bottom: 2px solid #397D8D;
+    overflow: hidden;
+}
+
+.flower-1, .flower-2, .flower-3, .flower-4 {
+    position: absolute;
+}
+
+.flower-1 {
+    width: 600px;
+    height: 600px;
+    right: 20px;
+    bottom: -170px;
+    opacity: 0.6;
+}
+
+.flower-2 {
+    width: 200px;
+    height: 200px;
+    left: 650px;
+    top: 130px;
+    opacity: 0.6;
+}
+
+.flower-3 {
+    width: 150px;
+    height: 150px;
+    left: 50px;
+    bottom: 160px;
+    opacity: 0.6;
+}
+
+.flower-4 {
+    width: 300px;
+    height: 300px;
+    left: 250px;
+    bottom: 30px;
+    opacity: 0.6;
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-15px) rotate(3deg); 
+    }
+}
+
+.flower-1, .flower-2, .flower-3, .flower-4 {
+    animation: float 4s ease-in-out infinite;
+}
+
+/******** MadLib Questions *******/
+#madlib-questions, #madlib-output {
+    display: block;
+    background-color: var(--lemonChiffon);
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 15px;
+    border: 2px solid #B6B281;
+}
+
+#madlib-output {
+    margin: 30px auto;
+    display: none;
+}
+
+#madlib-output p {
+    line-height: 1.8;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#madlib-output span {
+    color: var(--pacificCyan);
+    font-weight: 800;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-shadow: 2px 1px 5px 0px rgba(57,125,141,0.75) inset;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form button {
+    grid-column: 1 / -1;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background-color: var(--pacificCyan);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+}
+
+form button:hover {
+    background-color: var(--frostedBlue);
+    border: 1px solid var(--pacificCyan);
+    transition: all 0.2s ease-in;
+}
+
+input[type="text"]:focus {
+    border: 1px solid var(--frostedBlue);
+    outline: 2px dashed var(--pacificCyan);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/******** Footer *******/
+footer {
+    background-color: var(--cottonRose);
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #A88C8D;
+}
+
+.footer-1 {
+    text-align: left;
+    margin: 0;
+}
+
+.footer-2 {
+    text-align: right;
+    margin: 0;
+    font-style: normal;
+}
+
+footer a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--pacificCyan);
+}

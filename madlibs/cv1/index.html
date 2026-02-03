@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+        <!-- Comfortaa -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <title>MadLibs Code Version 1</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>SpongeBob SquarePants</h1>
+        <h2>MadLibs</h2>
+        <div id="background">
+            <div class="flower-1"><img src="images/flower-1.png" alt="flower-1" width="600" height="600"></div>
+            <div class="flower-2"><img src="images/flower-2.png" alt="flower-2" width="200" height="200"></div>
+            <div class="flower-3"><img src="images/flower-3.png" alt="flower-3" width="150" height="150"></div>
+            <div class="flower-4"><img src="images/flower-4.png" alt="flower-4" width="300" height="300"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="madlib-questions">
+            <h3>Fill in the Blanks, Matey!</h3>   
+            <form>
+                <div class="form-field">
+                    <label for="adjective">1. Adjective:</label>
+                    <input type="text" name="adjective" id="adjective" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="part-of-the-body">2. Part of the body:</label>
+                    <input type="text" name="part-of-the-body" id="part-of-the-body" required>    
+                </div>
+
+                <div class="form-field">
+                    <label for="emotion">3. Emotion:</label>
+                    <input type="text" name="emotion" id="emotion" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="place">4. Place:</label>
+                    <input type="text" name="place" id="place" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="person">5. Person:</label>
+                    <input type="text" name="person" id="person" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="animal">6. Animal:</label>
+                    <input type="text" name="animal" id="animal" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="silly-word">7. Silly word:</label>
+                    <input type="text" name="silly-word" id="silly-word" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="verb-ending-in-ing">8. Verb ending in “-ing”:</label>
+                    <input type="text" name="verb-ending-in-ing" id="verb-ending-in-ing" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="noun">9. Noun:</label>
+                    <input type="text" name="noun" id="noun" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="adverb">10. Adverb:</label>
+                    <input type="text" name="adverb" id="adverb" required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="madlib-output">
+            <h3>Your Bikini Bottom Adventure!</h3>
+            <p>SpongeBob felt very <span>adjective</span> as he stepped into the boatmobile for his very important driver’s test. His <span>part of the body</span> wouldn’t stop sweating as he imagined disappointing Mrs. Puff yet again. Once the engine started, all he could feel was pure <span>emotion</span>.</p>
+            <p>All he had to do was survive the drive to <span>place</span>, and then the nightmare would be over. Along the way, he passed <span>person</span>, who stared at him in complete disbelief. Suddenly, SpongeBob slammed on the brakes when a <span>animal</span> ran into the road. Miraculously, he swerved just in time and kept going.</p>
+            <p>Shockingly, things were going well, and SpongeBob felt <span>silly word</span> about the whole situation. As the test came to an end, only one thought echoed in his mind, that he would be <span>verb ending in "ing"</span> no matter what happened. Mrs. Puff finally told him to pull over at the <span>noun</span>. SpongeBob’s driving test was officially over, and somehow, it had gone <span>adverb</span>.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-1">Designed by Jennifer Fuentes</p>
+        
+        <address class="footer-2">
+            Contact: <a href="mailto:&#106;&#101;&#110;&#102;&#117;&#101;&#110;&#116;&#101;&#115;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#106;&#101;&#110;&#102;&#117;&#101;&#110;&#116;&#101;&#115;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
+        </address>
+    </footer>
+
+</body>
+</html>
