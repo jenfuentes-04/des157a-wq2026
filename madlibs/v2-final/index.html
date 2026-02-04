@@ -16,7 +16,7 @@
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet">
 
-    <title>MadLibs Code Version 1</title>
+    <title>Final MadLibs Project</title>
     <script src="script.js" defer></script>
 </head>
 
@@ -38,63 +38,72 @@
             <form id="myForm">
                 <div class="form-field">
                     <label for="adjective">1. Adjective:</label>
-                    <input type="text" name="adjective" id="adjective" required>
+                    <input type="text" name="adjective" id="adjective">
                 </div>
 
                 <div class="form-field">
-                    <label for="part-of-the-body">2. Part of the body:</label>
-                    <input type="text" name="part-of-the-body" id="part-of-the-body" required>    
+                    <label for="body">2. Part of the body:</label>
+                    <input type="text" name="body" id="body">    
                 </div>
 
                 <div class="form-field">
                     <label for="emotion">3. Emotion:</label>
-                    <input type="text" name="emotion" id="emotion" required>
+                    <input type="text" name="emotion" id="emotion">
                 </div>
 
                 <div class="form-field">
                     <label for="place">4. Place:</label>
-                    <input type="text" name="place" id="place" required>
+                    <input type="text" name="place" id="place">
                 </div>
 
                 <div class="form-field">
                     <label for="person">5. Person:</label>
-                    <input type="text" name="person" id="person" required>
+                    <input type="text" name="person" id="person">
                 </div>
 
                 <div class="form-field">
                     <label for="animal">6. Animal:</label>
-                    <input type="text" name="animal" id="animal" required>
+                    <input type="text" name="animal" id="animal">
                 </div>
 
                 <div class="form-field">
-                    <label for="silly-word">7. Silly word:</label>
-                    <input type="text" name="silly-word" id="silly-word" required>
+                    <label for="silly">7. Silly word:</label>
+                    <input type="text" name="silly" id="silly">
                 </div>
 
                 <div class="form-field">
-                    <label for="verb-ending-in-ing">8. Verb ending in “-ing”:</label>
-                    <input type="text" name="verb-ending-in-ing" id="verb-ending-in-ing" required>
+                    <label for="verb">8. Verb ending in “-ing”:</label>
+                    <input type="text" name="verb" id="verb">
                 </div>
 
                 <div class="form-field">
                     <label for="noun">9. Noun:</label>
-                    <input type="text" name="noun" id="noun" required>
+                    <input type="text" name="noun" id="noun">
                 </div>
 
                 <div class="form-field">
                     <label for="adverb">10. Adverb:</label>
-                    <input type="text" name="adverb" id="adverb" required>
+                    <input type="text" name="adverb" id="adverb">
                 </div>
 
                 <button type="submit">Submit</button>
             </form>
+
+            <div id="error"></div>
         </section>
 
         <section id="madlib-output">
-            <h3>Your Bikini Bottom Adventure!</h3>
-            <p>SpongeBob felt very <span>adjective</span> as he stepped into the boatmobile for his very important driver’s test. His <span>part of the body</span> wouldn’t stop sweating as he imagined disappointing Mrs. Puff yet again. Once the engine started, all he could feel was pure <span>emotion</span>.</p>
-            <p>All he had to do was survive the drive to <span>place</span>, and then the nightmare would be over. Along the way, he passed <span>person</span>, who stared at him in complete disbelief. Suddenly, SpongeBob slammed on the brakes when a <span>animal</span> ran into the road. Miraculously, he swerved just in time and kept going.</p>
-            <p>Shockingly, things were going well, and SpongeBob felt <span>silly word</span> about the whole situation. As the test came to an end, only one thought echoed in his mind, that he would be <span>verb ending in "ing"</span> no matter what happened. Mrs. Puff finally told him to pull over at the <span>noun</span>. SpongeBob’s driving test was officially over, and somehow, it had gone <span>adverb</span>.</p>
+            <article>
+
+                <div id="madlib">
+                    <!-- <h3>Your Bikini Bottom Adventure!</h3>
+                    <p>SpongeBob felt very <span>adjective</span> as he stepped into the boatmobile for his very important driver’s test. His <span>part of the body</span> wouldn’t stop sweating as he imagined disappointing Mrs. Puff yet again. Once the engine started, all he could feel was pure <span>emotion</span>.</p>
+                    <p>All he had to do was survive the drive to <span>place</span>, and then the nightmare would be over. Along the way, he passed <span>person</span>, who stared at him in complete disbelief. Suddenly, SpongeBob slammed on the brakes when a <span>animal</span> ran into the road. Miraculously, he swerved just in time and kept going.</p>
+                    <p>Shockingly, things were going well, and SpongeBob felt <span>silly word</span> about the whole situation. As the test came to an end, only one thought echoed in his mind, that he would be <span>verb ending in "ing"</span> no matter what happened. Mrs. Puff finally told him to pull over at the <span>noun</span>. SpongeBob’s driving test was officially over, and somehow, it had gone <span>adverb</span>.</p> -->
+                </div>
+
+                <p><a href="#" id="close">close</a></p>
+            </article>
         </section>
 
     </main>
