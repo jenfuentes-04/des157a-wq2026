@@ -153,6 +153,10 @@ header {
     font-weight: 800;
 }
 
+.close-button {
+    text-align: center;
+}
+
 #madlib-output a {
     color: var(--white);
     background-color: var(--pacificCyan);

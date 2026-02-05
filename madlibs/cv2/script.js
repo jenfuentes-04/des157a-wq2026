@@ -65,6 +65,7 @@
             document.querySelector('#adverb').focus();
             errorMessage.innerHTML = myText;
         } else {
+            errorMessage.innerHTML = '';
             myText = `<h3>Your Bikini Bottom Adventure!</h3>
                 <p>SpongeBob felt very <span>${adjective}</span> as he stepped into the boatmobile for his very important driver’s test. His <span>${body}</span> wouldn’t stop sweating as he imagined disappointing Mrs. Puff yet again. Once the engine started, all he could feel was <span>${emotion}</span>.</p>
                 <p>All he had to do was survive the drive to <span>${place}</span>, and then the nightmare would be over. Along the way, he passed <span>${person}</span>, who stared at him in complete disbelief. Suddenly, SpongeBob slammed on the brakes when a <span>${animal}</span> ran into the road. Miraculously, he swerved just in time and kept going.</p>
