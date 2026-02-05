@@ -64,7 +64,7 @@ header {
     padding-top: 50px;
     padding-bottom: 0;
     position: relative;
-    border-bottom: 2px solid #397D8D;
+    border-bottom: 1px solid #397D8D;
     overflow: hidden;
 }
 
@@ -126,7 +126,7 @@ header {
     padding: 50px;
     padding-top: 20px;
     border-radius: 15px;
-    border: 2px solid #B6B281;
+    border: 1px solid #B6B281;
 }
 
 #madlib-output {
@@ -134,8 +134,9 @@ header {
     display: none;
     position: absolute;
     top: 250px;
-    left: 233px;
-    padding-bottom: 20px;
+    left: 234px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #madlib-output p {
@@ -143,6 +144,8 @@ header {
     font-size: 18px;
     font-weight: 100;
     margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #madlib-output span {
@@ -151,11 +154,17 @@ header {
 }
 
 #madlib-output a {
-    color: var(--pacificCyan);
+    color: var(--white);
+    background-color: var(--pacificCyan);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
 #madlib-output a:hover {
-    color: var(--frostedBlue);
+    background-color: var(--frostedBlue);
+    border: 1px solid var(--pacificCyan);
     transition: all 0.2s ease-in;
 }
 
@@ -163,6 +172,7 @@ form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 30px;
+    font-size: 15px;
 }
 
 form label {
@@ -196,6 +206,13 @@ form button:hover {
     transition: all 0.2s ease-in;
 }
 
+form p {
+    font-size: 11px;
+    color: #7e7676;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
 input[type="text"]:focus {
     border: 1px solid var(--frostedBlue);
     outline: 2px dashed var(--pacificCyan);
@@ -210,13 +227,14 @@ input[type="text"]:focus {
 
 /******** Footer *******/
 footer {
-    background-color: var(--cottonRose);
+    background-color: #e4cff9;
     padding: 30px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid #A88C8D;
-    color: #6e4649;
+    border-top: 1px solid #6d6278;
+    color: #6d6278;
+    font-weight: 800;
 }
 
 .footer-1 {
@@ -231,7 +249,7 @@ footer {
 }
 
 footer a {
-    color: #6e4649;
+    color: #6d6278;
     text-decoration: none;
 }
 

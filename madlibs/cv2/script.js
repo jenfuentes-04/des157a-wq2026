@@ -53,7 +53,7 @@
             document.querySelector('#silly').focus();
             errorMessage.innerHTML = myText;
         } else if (verb == '') {
-            myText = "Hold the pickles! You need a verb ending in “-ing” here.";
+            myText = 'Hold the pickles! You need a verb ending in “-ing” here.';
             document.querySelector('#verb').focus();
             errorMessage.innerHTML = myText;
         } else if (noun == '') {
@@ -66,7 +66,7 @@
             errorMessage.innerHTML = myText;
         } else {
             myText = `<h3>Your Bikini Bottom Adventure!</h3>
-                <p>SpongeBob felt very <span>${adjective}</span> as he stepped into the boatmobile for his very important driver’s test. His <span>${body}</span> wouldn’t stop sweating as he imagined disappointing Mrs. Puff yet again. Once the engine started, all he could feel was pure <span>${emotion}</span>.</p>
+                <p>SpongeBob felt very <span>${adjective}</span> as he stepped into the boatmobile for his very important driver’s test. His <span>${body}</span> wouldn’t stop sweating as he imagined disappointing Mrs. Puff yet again. Once the engine started, all he could feel was <span>${emotion}</span>.</p>
                 <p>All he had to do was survive the drive to <span>${place}</span>, and then the nightmare would be over. Along the way, he passed <span>${person}</span>, who stared at him in complete disbelief. Suddenly, SpongeBob slammed on the brakes when a <span>${animal}</span> ran into the road. Miraculously, he swerved just in time and kept going.</p>
                 <p>Shockingly, things were going well, and SpongeBob felt <span>${silly}</span> about the whole situation. As the test came to an end, only one thought echoed in his mind, that he would be <span>${verb}</span> no matter what happened. Mrs. Puff finally told him to pull over at the <span>${noun}</span>. SpongeBob’s driving test was officially over, and somehow, it had gone <span>${adverb}</span>.</p>`;
 
