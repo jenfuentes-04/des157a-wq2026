@@ -204,7 +204,7 @@ input[type="text"]:focus {
 
 #error {
     padding-top: 15px;
-    color: #d14141;
+    color: #e98c8f;
     font-weight: 800;
 }
 
@@ -216,6 +216,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-top: 2px solid #A88C8D;
+    color: #6e4649;
 }
 
 .footer-1 {
@@ -230,7 +231,7 @@ footer {
 }
 
 footer a {
-    color: var(--black);
+    color: #6e4649;
     text-decoration: none;
 }
 

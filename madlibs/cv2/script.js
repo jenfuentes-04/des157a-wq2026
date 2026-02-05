@@ -25,43 +25,43 @@
         let myText;
 
         if (adjective == '') {
-            myText = "Whoops! Don't forget to provide an adjective.";
+            myText = "Hold the pickles! You need an adjective here.";
             document.querySelector('#adjective').focus();
             errorMessage.innerHTML = myText;
         } else if (body == '') {
-            myText = "Whoops! Don't forget to provide a part of the body.";
+            myText = "Hold the pickles! You need a part of the body here.";
             document.querySelector('#body').focus();
             errorMessage.innerHTML = myText;
         } else if (emotion == '') {
-            myText = "Whoops! Don't forget to provide an emotion.";
+            myText = "Hold the pickles! You need an emotion here.";
             document.querySelector('#emotion').focus();
             errorMessage.innerHTML = myText;
         } else if (place == '') {
-            myText = "Whoops! Don't forget to provide a place.";
+            myText = "Hold the pickles! You need a place here.";
             document.querySelector('#place').focus();
             errorMessage.innerHTML = myText;
         } else if (person == '') {
-            myText = "Whoops! Don't forget to provide a person.";
+            myText = "Hold the pickles! You need a person here.";
             document.querySelector('#person').focus();
             errorMessage.innerHTML = myText;
         } else if (animal == '') {
-            myText = "Whoops! Don't forget to provide an animal.";
+            myText = "Hold the pickles! You need an animal here.";
             document.querySelector('#animal').focus();
             errorMessage.innerHTML = myText;
         } else if (silly == '') {
-            myText = "Whoops! Don't forget to provide a silly word.";
+            myText = "Hold the pickles! You need a silly word here.";
             document.querySelector('#silly').focus();
             errorMessage.innerHTML = myText;
         } else if (verb == '') {
-            myText = "Whoops! Don't forget to provide a verb ending in “-ing”.";
+            myText = "Hold the pickles! You need a verb ending in “-ing” here.";
             document.querySelector('#verb').focus();
             errorMessage.innerHTML = myText;
         } else if (noun == '') {
-            myText = "Whoops! Don't forget to provide a noun.";
+            myText = "Hold the pickles! You need a noun here.";
             document.querySelector('#noun').focus();
             errorMessage.innerHTML = myText;
         } else if (adverb == '') {
-            myText = "Whoops! Don't forget to provide an adverb.";
+            myText = "Hold the pickles! You need an adverb here.";
             document.querySelector('#adverb').focus();
             errorMessage.innerHTML = myText;
         } else {
