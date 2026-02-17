@@ -1,0 +1,81 @@
+:root {
+    --sliderwidth: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #6a85a7;
+    color: #ffffff;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+#slider {
+    display: flex;
+    position: absolute;
+    left: 0;
+    height: 600px;
+    transition: all 25s linear;
+}
+
+#slider figure {
+    margin: 0;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+#slider div img {
+    height: 100%;
+    display: block;
+    border: 5px solid #ffffff;
+    border-radius: 50px;
+}
+
+.a, .b {
+    display: flex;
+    height: 100%;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    font-weight: 800;
+    padding: 80px;
+    font-size: 1.25rem;
+    background: rgba(0, 0, 0, 0.55);
+    transition: opacity 0.3s ease;
+    box-sizing: border-box;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+@keyframes moveSlider {
+    from { left: 0; }
+    to { left: var(--sliderwidth) }
+}
+
+#slider.paused {
+    animation-play-state: paused;
+}
+
+.animate {
+    animation-name: moveSlider;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
