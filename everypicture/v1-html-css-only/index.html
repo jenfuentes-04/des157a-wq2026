@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture Code Version 1</title>
+    
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+        <!-- Sunshiney -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sunshiney&display=swap" rel="stylesheet">
+
+        <!-- Comic Relief -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <!-- Cover Page -->
+        <section id="cover" class="page showing">
+            <img src="images/1.png" class="scrapbook-cover" alt="cover" width="556" height="687">
+            <div class="cover-content">
+                <h1>Childhood Nostalgia</h1>
+                <button id="start-btn">Open Scrapbook</button>
+            </div>
+        </section>
+
+        <!-- Open Scrapbook Spread (pages 1 & 2) -->
+        <article id="spread1" class="page hidden">
+            <img src="images/2.png" class="scrapbook-background" alt="spread" width="928" height="711">
+            <div class="scrapbook-content">
+                <!-- LEFT PAGE (Page 1) - 3 photos -->
+                <div class="photo-1">
+                    <img src="images/sisters.png" alt="sisters" width="250" height="300">
+                    <p>My sister and I on our toy motorcycle - one of our favorite things to play with together.</p>
+                </div>
+                
+                <div class="photo-2">
+                    <img src="images/aquarium.png" alt="childhood aquarium lamp" width="180" height="130" >
+                    <p>My fake aquarium lamp that would light up and mesmerize me for hours.</p>
+                </div>
+                
+                <div class="photo-3">
+                    <img src="images/camera.png" alt="digital camera" width="150" height="100" >
+                    <p>My first camera - I thought I was such a photographer taking pictures of everything.</p>
+                </div>
+                
+                <!-- RIGHT PAGE (Page 2) - 3 photos -->
+                <div class="photo-4">
+                    <img src="images/harrypotter.png" alt="harry potter" width="200" height="250" >
+                    <p>Harry Potter and the Sorcerer's Stone - the book that started my love for reading.</p>
+                </div>
+                
+                <div class="photo-5">
+                    <img src="images/headphones.png" alt="white earbuds" width="200" height="120" >
+                    <p>My white earbuds - I would listen to music for hours, thinking I was so cool.</p>
+                </div>
+                
+                <div class="photo-6">
+                    <img src="images/pillowpet.png" alt="zebra pillow pet" width="200" height="200" >
+                    <p>My beloved zebra pillow pet that I slept with every single night.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Navigation -->
+         <nav class="hidden">
+            <button id="prev-btn">Previous</button>
+            <span id="page-counter">Page 1 of 1</span>
+            <button id="next-btn">Next</button>
+         </nav>
+
+        <!-- Close/Back to Cover -->
+         <button id="close-btn" class="hidden">Close Scrapbook</button>
+
+        <!-- Overlay for image descriptions (will appear on click) -->
+        <div id="overlay" class="overlay hidden">
+            <div class="overlay-content">
+                <button id="overlay-close">Close Description</button>
+                <p id="overlay-text"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
