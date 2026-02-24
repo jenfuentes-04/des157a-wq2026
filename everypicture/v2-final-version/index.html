@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Every Picture Project</title>
+    
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+        <!-- Sunshiney -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sunshiney&display=swap" rel="stylesheet">
+
+        <!-- Comic Relief -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <!-- Cover Page -->
+        <section id="cover" class="page showing">
+            <img src="images/1.png" class="scrapbook-cover" alt="cover" width="556" height="687">
+            <img src="images/cover-design.png" class="cover-design" alt="cover-design" width="435" height="458">
+            <button id="start">Open Scrapbook</button>
+        </section>
+
+        <!-- Open Scrapbook Spread (pages 1-6) -->
+        <article id="spread1" class="page hidden">
+            <img src="images/2.png" class="scrapbook-background" alt="spread" width="928" height="711">
+            <div class="scrapbook-content">
+                <!-- LEFT PAGE (Page 1) - 8 photos -->
+                <div class="photo-1">
+                    <img src="images/mylittlepony.png" alt="my little pony" width="250" height="200">
+                    <p>My Little Pony: Friendship is Magic was a memorable show from my childhood.</p>
+                </div>
+                
+                <div class="photo-2">
+                    <img src="images/twistables.png" alt="twistables" width="150" height="200" >
+                    <p>I remember being obsessed with using these to color.</p>
+                </div>
+                
+                <div class="photo-3">
+                    <img src="images/aquarium.png" alt="childhood aquarium lamp" width="200" height="150" >
+                    <p>My fake aquarium lamp that would light up and mesmerize me for hours.</p>
+                </div>
+
+                <div class="photo-4">
+                    <img src="images/book1.png" alt="charlotte's web" width="150" height="200" >
+                    <p>Charlotte's Web was the first book that ever made me cry, I wasn't ready for that ending at all.</p>
+                </div>
+
+                <div class="photo-5">
+                    <img src="images/book4.png" alt="diary of a wimpy kid" width="200" height="250" >
+                    <p>I read every Diary of a Wimpy Kid book the second it came out.</p>
+                </div>
+
+                <div class="photo-6">
+                    <img src="images/lilo&stitch.png" alt="lilo and stitch" width="160" height="160" >
+                    <p>Lilo & Stitch was one of my absolute favorite movies.</p>
+                </div>
+
+                <div class="photo-7">
+                    <img src="images/findingnemo.png" alt="finding nemo" width="130" height="130" >
+                    <p>Finding Nemo made the ocean feel magical, I wanted to study marine biology after watching it.</p>
+                </div>
+
+                <div class="photo-8">
+                    <img src="images/nickjr.png" alt="nick jr" width="100" height="100" >
+                    <p>Nick Jr. was on in my house every single morning before school, a key part of my childhood.</p>
+                </div>
+
+                <!-- RIGHT PAGE (Page 2) - 8 photos -->
+                <div class="photo-9">
+                    <img src="images/book5.png" alt="dork diaries" width="150" height="200" >
+                    <p>Dork Diaries was my other obsession alongside Diary of a Wimpy Kid, such a good series with fun illustrations.</p>
+                </div>
+
+                <div class="photo-10">
+                    <img src="images/turtle.png" alt="my littlest pet shop" width="120" height="100" >
+                    <p>I had a whole collection of Littlest Pet Shop figures and this turtle was one of my absolute favorites.</p>
+                </div>
+                
+                <div class="photo-11">
+                    <img src="images/etchasketch.png" alt="etch a sketch" width="250" height="200" >
+                    <p>I could spend an entire afternoon on my Etch A Sketch, always trying and failing to draw anything.</p>
+                </div>
+                
+                <div class="photo-12">
+                    <img src="images/pokemon1.png" alt="front pokemon card" width="150" height="180" >
+                    <p>I collected Pokemon cards mainly for how they looked, I never really learned how to play the actual game.</p>
+                </div>
+
+                <div class="photo-13">
+                    <img src="images/barbie1.png" alt="barbie fairytopia" width="160" height="160" >
+                    <p>Barbie Fairytopia was iconic, I watched it on repeat and genuinely believed fairies could be real.</p>
+                </div>
+
+                <div class="photo-14">
+                    <img src="images/barbie2.png" alt="barbie and the diamond castle" width="130" height="130" >
+                    <p>Barbie and the Diamond Castle had the best songs, I sang along every single time.</p>
+                </div>
+
+                <div class="photo-15">
+                    <img src="images/grinch.png" alt="how the grinch stole christmas" width="100" height="100" >
+                    <p>The Grinch was a must-watch holiday movie in my house, one of the best Christmas movies.</p>
+                </div>
+
+                <div class="photo-16">
+                    <img src="images/harrypotter.png" alt="harry potter and the sorcerer's stone movie" width="160" height="160" >
+                    <p>Watching the Harry Potter movies for the first time was life changing.</p>
+                </div>
+            </div>  
+        </article>
+
+        <article id="spread2" class="page hidden">
+            <img src="images/2.png" class="scrapbook-background" alt="spread" width="928" height="711">
+            <div class="scrapbook-content">
+                <!-- LEFT PAGE (Page 3) - 8 photos -->
+                <div class="photo-1">
+                    <img src="images/twilight.png" alt="twilight sparkle" width="180" height="180">
+                    <p>From My Little Pony, Twilight Sparkle was one of my favorite characters.</p>
+                </div>
+               
+                <div class="photo-2">
+                    <img src="images/girlscouts.png" alt="thin mints girl scout cookies" width="150" height="200" >
+                    <p>Girl Scout cookie season was a great time of the year. My personal favorites were the Thin Mints.</p>
+                </div>              
+
+                <div class="photo-3">
+                    <img src="images/camera.png" alt="digital camera" width="200" height="130" >
+                    <p>My first camera - I thought I was such a photographer taking pictures of everything.</p>
+                </div>
+
+                <div class="photo-4">
+                    <img src="images/book2.png" alt="magic tree house" width="150" height="200" >
+                    <p>The Magic Tree House series made me fall in love with reading.</p>
+                </div>
+
+                <div class="photo-5">
+                    <img src="images/cars.png" alt="cars" width="180" height="180" >
+                    <p>Cars was one of those movies I could watch repeatedly. I loved Lightning McQueen.</p>
+                </div>
+
+                <div class="photo-6">
+                    <img src="images/ppg.png" alt="the powerpuff girls" width="130" height="130" >
+                    <p>The Powerpuff Girls was a classic show loved by all. </p>
+                </div>
+
+                <div class="photo-7">
+                    <img src="images/kikis.png" alt="kiki's delivery service" width="160" height="160" >
+                    <p>Kiki's Delivery Service was the first Studio Ghibli film I ever saw and it made me a fan for life.</p>
+                </div>
+          
+                <div class="photo-8">
+                    <img src="images/peterpan.png" alt="peter pan" width="100" height="100" >
+                    <p>Peter Pan made me genuinely sad that I would eventually have to grow up.</p>
+                </div>
+
+                <!-- RIGHT PAGE (Page 4) - 8 photos -->
+                <div class="photo-9">
+                    <img src="images/sonic.png" alt="sonic the hedgehog" width="100" height="200" >
+                    <p>Sonic was the cool, fast kid of video games.</p>
+                </div>
+
+                <div class="photo-10">
+                    <img src="images/applejack.png" alt="applejack" width="120" height="90" >
+                    <p>Applejack, from My Little Pony, was one of the characters I most admired.</p>
+                </div>
+                
+                <div class="photo-11">
+                    <img src="images/vintage-computer.png" alt="kid computer toy" width="280" height="300" >
+                    <p>This computer toy was so fun to play with and made me feel more grown up.</p>
+                </div>
+
+                <div class="photo-12">
+                    <img src="images/rubiks-cube.png" alt="rubik's cube" width="130" height="130" >
+                    <p>I never once actually solved a Rubik's Cube. I found it too hard.</p>
+                </div>   
+
+                <div class="photo-13">
+                    <img src="images/princess.png" alt="disney princesses" width="160" height="160" >
+                    <p>Disney princesses played one of the biggest parts in my childhood.</p>
+                </div>
+
+                <div class="photo-14">
+                    <img src="images/ratatouille.png" alt="ratatouille" width="130" height="130" >
+                    <p>Ratatouille genuinely made me want to learn how to cook.</p>
+                </div>
+
+                <div class="photo-15">
+                    <img src="images/rio.png" alt="rio" width="100" height="100" >
+                    <p>Rio is such a great movie with great songs.</p>
+                </div>
+
+                <div class="photo-16">
+                    <img src="images/shrek.png" alt="shrek" width="160" height="160" >
+                    <p>Shrek is iconic and definitely a most watched movie.</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="spread3" class="page hidden">
+            <img src="images/2.png" class="scrapbook-background" alt="spread" width="928" height="711">
+            <div class="scrapbook-content">
+                 <!-- LEFT PAGE (Page 5) - 8 photos -->
+                <div class="photo-1">
+                    <img src="images/originalmlp.png" alt="old my little pony" width="160" height="200">
+                    <p>The original My Little Pony had such a different vibe from the new ones.</p>
+                </div>
+                
+                <div class="photo-2">
+                    <img src="images/pokemon2.png" alt="back pokemon card" width="140" height="180" >
+                    <p>The back of every Pokemon card had that iconic blue design.</p>
+                </div>
+                
+                <div class="photo-3">
+                    <img src="images/pillowpet.png" alt="zebra pillow pet" width="200" height="200" >
+                    <p>My beloved zebra pillow pet that I slept with every single night.</p>
+                </div>
+
+                <div class="photo-4">
+                    <img src="images/book3.png" alt="dear dumb diary" width="150" height="200" >
+                    <p>Dear Dumb Diary was so funny to me as a kid.</p>
+                </div>
+
+                <div class="photo-5">
+                    <img src="images/plate.png" alt="winnie the pooh plate" width="180" height="180" >
+                    <p>This Winnie the Pooh plate was such a good buy.</p>
+                </div>
+
+                <div class="photo-6">
+                    <img src="images/game2.png" alt="just dance 2" width="130" height="130" >
+                    <p>Just Dance 2 on the Wii was our go-to at every sleepover.</p>
+                </div>
+
+                <div class="photo-7">
+                    <img src="images/game1.png" alt="new super mario bros. wii" width="130" height="130" >
+                    <p>New Super Mario Bros. Wii was the game that I played constantly.</p>
+                </div>
+
+                <div class="photo-8">
+                    <img src="images/game3.png" alt="harry potter and the chamber of secrets playstation game" width="100" height="100" >
+                    <p>The Harry Potter PlayStation game was one of the more complicated games.</p>
+                </div>
+
+                <!-- RIGHT PAGE (Page 6) - 8 photos -->
+                <div class="photo-9">
+                    <img src="images/book6.png" alt="harry potter and the sorcerer's stone book" width="150" height="200" >
+                    <p>Harry Potter and the Sorcerer's Stone was the book that made me want to get into reading.</p>
+                </div>
+                
+                <div class="photo-10">
+                    <img src="images/headphones.png" alt="white earbuds" width="150" height="100" >
+                    <p>My white earbuds, I would listen to music for hours, thinking I was so cool.</p>
+                </div>
+
+                <div class="photo-11">
+                    <img src="images/winniethepooh.png" alt="winnie the pooh plush" width="230" height="280" >
+                    <p>My Winnie the Pooh stuffed animal was my most prized possession.</p>
+                </div>
+
+                <div class="photo-12">
+                    <img src="images/candyland.png" alt="candy land" width="130" height="180" >
+                    <p>Candy Land was the first board game I ever learned.</p>
+                </div>
+
+                <div class="photo-13">
+                    <img src="images/tinkerbell.png" alt="secret of the wings" width="160" height="160" >
+                    <p>Secret of the Wings was such a beautiful movie. I always watched the Tinkerbell movies growing up, still do now.</p>
+                </div>
+
+                <div class="photo-14">
+                    <img src="images/walle.png" alt="wall-e" width="130" height="130" >
+                    <p>WALL-E made me so emotional as a kid.</p>
+                </div>
+
+                <div class="photo-15">
+                    <img src="images/monstersinc.png" alt="monsters, inc." width="110" height="110" >
+                    <p>Monsters, Inc. made me convinced there were actually monsters in my closet.</p>
+                </div>
+
+                <div class="photo-16">
+                    <img src="images/snowwhite.png" alt="snow white and the seven dwarfs" width="130" height="130" >
+                    <p>Snow White was a movie I returned to again and again, like with any Disney Princess movie.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Navigation -->
+         <nav class="hidden">
+            <button id="previous">Previous</button>
+            <span id="page-counter">Page 1 of 3</span>
+            <button id="next">Next</button>
+         </nav>
+
+        <!-- Close/Back to Cover -->
+         <button id="close" class="hidden">Close Scrapbook</button>
+
+        <!-- Overlay for image descriptions (will appear on click) -->
+        <div id="overlay" class="overlay hidden">
+        </div>
+    </main>
+</body>
+</html>
