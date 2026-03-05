@@ -29,6 +29,9 @@
 
         nav.classList.remove('hidden');
         close.classList.remove('hidden');
+
+        prevBtn.disabled = true;
+        nextBtn.disabled = false;
     });
 
     // Close scrapbook
@@ -60,6 +63,7 @@
             spread2.classList.remove('hidden');
             spread2.classList.add('showing');
             currentPage = 2;
+            prevBtn.disabled = false;
 
         } else if(currentPage === 2){
             spread2.classList.remove('showing');
@@ -67,13 +71,10 @@
             spread3.classList.remove('hidden');
             spread3.classList.add('showing');
             currentPage = 3;
+            nextBtn.disabled = true;
 
         } else if(currentPage === 3){
-            spread3.classList.remove('showing');
-            spread3.classList.add('hidden');
-            spread1.classList.remove('hidden');
-            spread1.classList.add('showing');
-            currentPage = 1;
+            return;
         }
 
         pageCounter.textContent = `Page ${currentPage} of 3`;
@@ -82,11 +83,7 @@
     // Previous button
     prevBtn.addEventListener('click', function(){
         if(currentPage === 1){
-            spread1.classList.remove('showing');
-            spread1.classList.add('hidden');
-            spread3.classList.remove('hidden');
-            spread3.classList.add('showing');
-            currentPage = 3;
+            return;
 
         } else if(currentPage === 2){
             spread2.classList.remove('showing');
@@ -94,6 +91,8 @@
             spread1.classList.remove('hidden');
             spread1.classList.add('showing');
             currentPage = 1;
+            prevBtn.disabled = true;
+            nextBtn.disabled = false;
 
         } else if(currentPage === 3){
             spread3.classList.remove('showing');
@@ -101,6 +100,7 @@
             spread2.classList.remove('hidden');
             spread2.classList.add('showing');
             currentPage = 2;
+            nextBtn.disabled = false;
         }
 
         pageCounter.textContent = `Page ${currentPage} of 3`;

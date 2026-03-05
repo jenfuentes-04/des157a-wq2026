@@ -67,6 +67,11 @@ h1 {
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: none;
+    background-color: #d481a0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #ffffff;
 }
 
 /******** Scrapbook Pages *******/
@@ -175,31 +180,56 @@ article.page {
 /******** Navigation Styles *******/
 nav {
     position: fixed;
-    bottom: 30px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#previous, #next {
+    border: 3px solid #d481a0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #d481a0;
+}
+
+#previous:hover, #next:hover {
+    background-color: #d481a0;
+    color: #ffffff;
+}
+
+#previous:focus, #next:focus {
+    outline: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #close {
     position: fixed;
-    top: 40px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
+    border: none;
+    background-color: #d481a0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #ffffff;
 }
 
-button {
-    cursor: pointer;
-    transition: all 0.3s ease;
+#start:hover, #close:hover {
+    border: 3px solid #d481a0;
+    background-color: #ffffff;
+    color: #d481a0;
+}
+
+#start:focus, #close:focus {
+    outline: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:hover {
     transform: scale(1.05);
-}
-
-button:focus {
-    border: 3px solid #ac5bce;
-    outline: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .photo-1:hover, .photo-2:hover, .photo-3:hover, .photo-4:hover, .photo-5:hover, .photo-6:hover, .photo-7:hover, .photo-8:hover, .photo-9:hover, .photo-10:hover, .photo-11:hover, .photo-12:hover, .photo-13:hover, .photo-14:hover, .photo-15:hover, .photo-16:hover {
@@ -210,7 +240,7 @@ button:focus {
 /******** Overlay Styles *******/
 #overlay {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.5);
     top: 0;
     left: 0;
     width: 100vw;
