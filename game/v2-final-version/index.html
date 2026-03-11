@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Game On Project</title>
+    
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+        <!-- Lancelot -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header id="top">
+            <h1>Welcome to Forest Foraging!</h1>
+            <div id="score">
+                <p id="deerscore">Deer: 0</p>
+                <p id="bunnyscore">Bunny: 0</p>
+            </div>
+        </header>
+
+        <div id="gamecenter">
+            <div id="gamecontrol">
+                <button id="startgame">Start Game</button>
+                <div id="playerpick" class="hidden">
+                    <p>Who goes first?</p>
+                    <button id="pickdeer">Deer</button>
+                    <button id="pickbunny">Bunny</button>
+                </div>
+            </div>
+
+            <div id="game"></div>
+            <div id="actions"></div>
+        </div>
+
+        <img src="images/deer.png" id="deer" alt="deer" width="400" height="400">
+        <img src="images/bunny.png" id="bunny" alt="bunny" width="300" height="300">
+        <img src="images/blueberries.png" id="blueberries" alt="blueberries" width="250" height="250">
+        <img src="images/carrots.png" id="carrots" alt="carrots" width="350" height="350">
+
+        <button id="howtoplay">How to Play?</button>
+
+        <aside id="modal">
+            <div id="modalcontent">
+                <button id="closemodal">x</button>
+                <h2>How to Play</h2>
+                <p>There are two players. You get to choose which player gets to roll the dice first. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player's turn.</p>
+                <p>After each roll, the current player can either roll again or pass to the other player. The first player to get 30 points or higher wins.</p>
+                <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don't do that!</p> 
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <a href="sources.html">Sources</a>
+    </footer>
+
+</body>
+</html>
